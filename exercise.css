@@ -1,0 +1,219 @@
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+    color: #4f4f4f;
+}
+
+#wrapper{
+    background-color:  #98D1C8;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px; /*Chrome & Safari*/
+    -moz-border-radius: 5px; /*Firefox*/
+    -ms-border-radius: 5px; /*IE*/
+    -o-border-radius: 5px; /*Opera*/
+    
+}
+
+#wrapper h1{
+    padding-left: 12px;
+
+}
+
+.form-fname{
+    margin-bottom: 5px;
+    padding-left: 14px;
+}
+
+.form-lname{
+    margin-bottom: 15px;
+    padding-left: 14px; 
+}
+
+#fname{
+    margin-left: 5px;
+    padding-left: 3px;
+    height: 18px;
+    width: 265px;
+}
+
+#lname{
+    margin-left: 6px;
+    padding-left: 4px;
+    height: 18px;
+    width: 265px;
+}
+
+.form-point{
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.form-check{
+    margin-bottom: 10px;
+    padding-left: 12px;   
+
+}
+
+/* Base for label styling */
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  position: relative;
+  padding-top: 0.1em;
+  padding-left: 1.95em;
+  margin-left: 0em;
+  cursor: pointer;
+}
+
+ [type="radio"]:not(:checked) + label:before, 
+ [type="radio"]:checked + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 12px;   
+}
+
+/* checked mark aspect */
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+  content: '•';
+  position: absolute;
+  top: 0.05em; left: 0.04em;
+  font-size: 2.8em;
+  line-height: 0.3;
+  color: #F26F57;
+  transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* Base for label styling Checkbox*/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-top: 0.1em;
+  padding-left: 1.95em;
+  margin-left: 0em;
+  cursor: pointer;
+}
+
+ [type="checkbox"]:not(:checked) + label:before, 
+ [type="checkbox"]:checked + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: .1em; left: .3em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #F26F57;
+  transition: all .2s;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1.1;
+  transform: scale(1);
+}
+
+#air{
+    margin-right: 0.8em;
+}
+#air2{
+    margin-right: 1.3em;
+}
+
+p{
+padding-left: 10px;
+}
+
+span{
+    color: red;
+}
+
+.button{
+    /*background: url(NiceSubmitButtons/NiceSubmitButtons/send-button-md.gif) center no-repeat;*/
+    /*border: none;*/
+    background-color:#AFEEEE;
+    font-family: Tahoma;
+    font-size: 1em;
+    color: #4f4f4f;
+    text-decoration: none;
+    margin-left: 293px;
+    margin-bottom: -20px;
+    height: 35px;
+    width: 76px;
+    cursor: pointer;
+    border-radius: 2px;  
+    border: solid 1px #2C4B43;
+}
+
+.button:hover{
+    /*background: url(NiceSubmitButtons/NiceSubmitButtons/send-button-md_02.gif) center no-repeat;*/
+    /*color: transparent;*/
+    background-color: #2C4B43;
+    color: #fff;
+    text-decoration: underline;
+    border: none;
+    transition: all 0.4s ease-in-out;
+   
+}
+
+<* ---Responsive ---*>
+/*@media only screen and (max-width: 320) {
+   #wrapper{
+       width: 100%;
+        
+    }
+}*/
+
+
+
+
+
+
